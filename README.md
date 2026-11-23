@@ -47,4 +47,14 @@ Please create the HTML for the index.html file to make it into the home page for
 
 This prompt generated the response shown in PR 1 which was reviewed and merged into main it all compiles when tested in browser. It also made integrations based on another part of the plan not mentioned as it has access to this repository and was able to look at the plan I had set forward and integrated the CSS styling I had left out.
 
+## Step 5. Additional pages 
+Prompt used integrates with plan:
+
+Now please use the About.html and the CardGallery.html files to create the html for the about and card gallery pages respectively. They both should still include the header and footer used in Index.html and use the purple and black wisp pattern background and Times New Roman with white text CSS styling you made previously as well. The content of the about page should have the word "About" above a paragraph briefly explaining that the website uses an advanced LLM and for its creation as well as that the purpose of the page is to show Magic the Gathering Cards in a 3x3 grid that can also be filtered by the colors of the game. Those being White, Black, Red, Green, and Blue. This will be centered on the page. For the Card Gallery page content, it will hold a square with a 3x3 grid of images that can collapse into one column of 9 images for smaller windows. We will worry about the setup to display the images from the json file later. Right now just make the shell that will house said images.
+
+This prompt generated the files shown in PR 2 and all files were tested and work accordingly it also omitted a design I had come up with in the draft image for filtering as I wanted it to implement the feature hookup later.
+
+## Step 6. Formatting
+This section has no specific prompt as the changes needed for the styling were made in the first prompt and carried to the second prompt as the styling was already implemented. This was unexpected but welcome as it was going to be done later and its integration of style increased proficiency.
+
 
