@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTG Card Gallery | Gallery</title>
     <link rel="stylesheet" href="Styles.css">
+    <script src="Feature.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -21,7 +22,16 @@
     <main class="content">
         <section class="gallery">
             <h2>Gallery</h2>
-            <!-- Card images will be loaded here from the JSON file later -->
+            <!-- Color filter buttons are added here by Feature.js -->
+            <div class="color-filters" id="color-filters" role="group" aria-label="Filter cards by color"></div>
+
+            <!-- Shown only if the card data can't be loaded automatically -->
+            <div class="file-picker" id="file-picker" hidden>
+                <label for="card-file-input">Choose StandardAtomic.json:</label>
+                <input type="file" id="card-file-input" accept=".json,application/json">
+            </div>
+
+            <!-- Card images are loaded into these slots by Feature.js -->
             <div class="card-grid" id="card-grid">
                 <div class="card-slot" data-slot="1"><span class="card-placeholder">Card 1</span></div>
                 <div class="card-slot" data-slot="2"><span class="card-placeholder">Card 2</span></div>
@@ -33,6 +43,10 @@
                 <div class="card-slot" data-slot="8"><span class="card-placeholder">Card 8</span></div>
                 <div class="card-slot" data-slot="9"><span class="card-placeholder">Card 9</span></div>
             </div>
+
+            <p class="gallery-status" id="gallery-status" aria-live="polite"></p>
+            <!-- Page number buttons are added here by Feature.js -->
+            <nav class="pagination" id="pagination" aria-label="Card pages"></nav>
         </section>
     </main>
 
