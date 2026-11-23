@@ -194,3 +194,84 @@ a:focus {
         text-align: center;
     }
 }
+
+/* About page */
+.about {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 0 0 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Card Gallery page */
+.gallery h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+/* Square container holding a 3x3 grid of card slots */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+    width: 100%;
+    /* Keep the square small enough to fit in the window */
+    max-width: min(640px, 70vh);
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.card-slot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    overflow: hidden;
+    border: 1px dashed rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    background-color: rgba(110, 40, 170, 0.15);
+}
+
+/* Card images added later fill their slot without stretching */
+.card-slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+}
+
+/* Collapse the grid to one column of 9 on smaller windows */
+@media (max-width: 700px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        aspect-ratio: auto;
+        max-width: 320px;
+    }
+
+    .card-slot {
+        aspect-ratio: 5 / 7;
+    }
+}

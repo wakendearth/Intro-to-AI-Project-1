@@ -2,9 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTG Card Gallery | Gallery</title>
+    <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <h1 class="site-title">MTG Card Gallery</h1>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="CardGallery.html" class="active" aria-current="page">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main class="content">
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <!-- Card images will be loaded here from the JSON file later -->
+            <div class="card-grid" id="card-grid">
+                <div class="card-slot" data-slot="1"><span class="card-placeholder">Card 1</span></div>
+                <div class="card-slot" data-slot="2"><span class="card-placeholder">Card 2</span></div>
+                <div class="card-slot" data-slot="3"><span class="card-placeholder">Card 3</span></div>
+                <div class="card-slot" data-slot="4"><span class="card-placeholder">Card 4</span></div>
+                <div class="card-slot" data-slot="5"><span class="card-placeholder">Card 5</span></div>
+                <div class="card-slot" data-slot="6"><span class="card-placeholder">Card 6</span></div>
+                <div class="card-slot" data-slot="7"><span class="card-placeholder">Card 7</span></div>
+                <div class="card-slot" data-slot="8"><span class="card-placeholder">Card 8</span></div>
+                <div class="card-slot" data-slot="9"><span class="card-placeholder">Card 9</span></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-left">Created by Chase Anderson</div>
+        <div class="footer-middle">Disclaimer: This page was made with the help of AI.</div>
+        <div class="footer-right">
+            <a href="https://mtgjson.com/downloads/all-files/" target="_blank" rel="noopener noreferrer">MTGJSON Card Data</a>
+        </div>
+    </footer>
 </body>
 </html>
