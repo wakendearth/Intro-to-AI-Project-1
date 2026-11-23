@@ -57,4 +57,17 @@ This prompt generated the files shown in PR 2 and all files were tested and work
 ## Step 6. Formatting
 This section has no specific prompt as the changes needed for the styling were made in the first prompt and carried to the second prompt as the styling was already implemented. This was unexpected but welcome as it was going to be done later and its integration of style increased proficiency.
 
+## Step 7. Interactive Feature
+Prompt used to generate features in accordance with plan:
+
+Now please implement the Gallery features of displaying images in the grid in order from first to last. Being able to filter what images appear on the grid based on a row of true/false buttons of the games colors above the grid where clicking on them will either darken their text as disabled, or keep their text white as on. The cards shown will be an exact match to the enabled colors in the row of buttons. Lastly being able to change the images being shown in the grid from a number selection  at the bottom of the grid that will hold the next set of cards that can be looked at based on the current filter. To help implement this, use the StandardAtomic.json which holds the card data and create a js script called Feature.js where you will implement the functions to retrieve the cards from the Json file.
+
+In this implementation, the LLM notified me of two errors in the plan. The first was that the json file was incomplete and had no references to the card images. To fix this it asked me if I wanted to cut the json to the last full card and implement an api connection to the scryfall library instead (another mtg database) to properly show the images. I agreed and made it produce the following changes shown in PR 3 as well as a separate test branch as it informed me that htmls read from files will not be allowed to work with jsons so it made an option to upload files so I had it create the separate branch to test that and the trimming before bringing the pull request into main.
+
+## Step 8. Testing and Refining
+There is not much to add to this section other than point out the changes and testing done mainly in PR 3 in terms of the trimming and inclusion of the scryfall api to obtain card images which were things brought to my attention by the model, tested, then implemented once I saw the changes were functional.
+
+## Step 9 Finalization
+There will be a word doc submitted in the assignment block of this project viewable not on this site which goes over the prompt log of the LLM for the specific features,and a brief notation for 3 significant features as well as some of the logging done in this readme, Lastly a brief test of the site and its features.
+
 
