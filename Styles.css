@@ -262,6 +262,103 @@ a:focus {
     font-size: 1rem;
 }
 
+.card-slot.empty {
+    border-color: rgba(255, 255, 255, 0.15);
+    background-color: transparent;
+}
+
+/* Row of color toggle buttons above the grid.
+   Off: dimmed text. On: white text. */
+.color-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto 20px;
+}
+
+.color-toggle,
+.page-button {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.05rem;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.color-toggle {
+    min-width: 80px;
+    padding: 8px 14px;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.color-toggle:hover,
+.color-toggle:focus-visible {
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.color-toggle.on {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: rgba(160, 90, 230, 0.45);
+}
+
+.file-picker {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.file-picker[hidden] {
+    display: none;
+}
+
+.file-picker input {
+    margin-left: 8px;
+    color: #ffffff;
+    font-family: inherit;
+}
+
+.gallery-status {
+    text-align: center;
+    margin: 16px 0 8px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Page number buttons under the grid */
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.page-button {
+    min-width: 40px;
+    padding: 6px 10px;
+    color: #ffffff;
+}
+
+.page-button:hover:not(:disabled),
+.page-button:focus-visible {
+    background-color: rgba(160, 90, 230, 0.3);
+}
+
+.page-button.current {
+    background-color: rgba(160, 90, 230, 0.55);
+    border-color: #ffffff;
+}
+
+.page-button:disabled {
+    color: rgba(255, 255, 255, 0.3);
+    cursor: default;
+}
+
+.page-gap {
+    padding: 0 4px;
+}
+
 /* Collapse the grid to one column of 9 on smaller windows */
 @media (max-width: 700px) {
     .card-grid {
