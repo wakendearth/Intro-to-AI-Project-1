@@ -40,6 +40,11 @@ that will look for cards with the exact match of colors selected and only displa
 Each page will be formatted with a black and purple wisp pattern as its background with white text using Times New Roman as its font. 
 Each page will also have the title: "MTG Card Sorter" at the top left and a navigation bar to the three main pages underneath the title with the current page highlighted.
 
+## Step 4. Main Page
+Prompt used integrated with site plan:
 
+Please create the HTML for the index.html file to make it into the home page for the MTG Card Gallery Website. The text should be in Times New Roman, the header should have the title of the website of "MTG Card Gallery" with a navigation bar underneath it. The navigation bar includes Home, About, and Gallery each with a link to their respective page. The contents of the page will have a welcoming text with two blocks underneath it that are horizontal to each other. The left talks about the about page and includes a link to that page at the bottom of its description. The right does the same for the Card Gallery. There will be a footer with the name of the Creator as "Chase Anderson" on the left, the middle giving a disclaimer about how this page was made with AI, and the right side of the footer will have the following link: https://mtgjson.com/downloads/all-files/
+
+This prompt generated the response shown in PR 1 which was reviewed and merged into main it all compiles when tested in browser. It also made integrations based on another part of the plan not mentioned as it has access to this repository and was able to look at the plan I had set forward and integrated the CSS styling I had left out.
 
 
