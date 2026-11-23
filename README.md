@@ -34,7 +34,8 @@ The website will have 3 pages:
 2. An about page that will explain the that the website used AI to create it and that the purpose of the website is to show a database of Magic the Gathering Cards
 and allow them to be sorted through by its given color attribute.
 
-3. A Card Gallery Page That will display a 3x3 grid of Magic the Gathering cards. It will display the first 9 entries in the json file and have a page selector to see the next or previous 9 cards in sequence. This will be accompanied by a color filter that will look for cards with the exact match of colors selected and only display those entries.
+3. A Card Gallery Page That will display a 3x3 grid of Magic the Gathering cards. It will display the first 9 entries in the json file and have a page selector to see the next or previous 9 cards in sequence. This will be accompanied by a color filter in the style of buttons of the 5 colors of White, Black, Red, Green, and Blue
+that will look for cards with the exact match of colors selected and only display those entries.
 
 Each page will be formatted with a black and purple wisp pattern as its background with white text using Times New Roman as its font. 
 Each page will also have the title: "MTG Card Sorter" at the top left and a navigation bar to the three main pages underneath the title with the current page highlighted.
